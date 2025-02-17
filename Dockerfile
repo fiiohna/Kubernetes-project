@@ -7,7 +7,7 @@ CMD /bin/bash
 RUN yum install -y httpd
 RUN yum install -y zip
 RUN yum install -y unzip
-ADD https://templatemo.com/download/templatemo_589_lunar.zip /var/www/html/
+ADD https://templatemo.com/download/templatemo_590_topic_listing /var/www/html/
 WORKDIR /var/www/html/
 RUN sh -c 'unzip -q "*.zip"'
 RUN cp -rvf photogenic/* .
